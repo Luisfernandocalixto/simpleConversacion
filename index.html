@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple conversación</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="shortcut icon" href="/img/image.webp" type="image/x-icon">
+</head>
+
+<body>
+    <header class="content">
+        <h1>Simple conversación</h1>
+        <img src="/img/icono.webp" alt="Astronauta" class="imgPrincipal">
+    </header>
+    <section class="chat content">
+        <div id="chatbot"></div>
+        <input type="text" id="userInput" placeholder="Escribe" autocomplete="off" required>
+        <button id="buttonSend" disabled >Enviar</button>
+    </section>
+    <br>
+    <hr>
+    <section class="content">
+        <div class="flex">
+            <div>
+                <img src="/img/image.webp" class="imgPrincipal" alt="Astronauta">
+            </div>
+            <div id="result" >
+            </div>
+            <div class="input">
+                <input type="text" id="ans" placeholder="Escribe" required autocomplete="off" />
+            </div>
+        </div>
+
+    </section>
+    <script src="/js/index.js"></script>
+    <script  src="/js/app.js"></script>
+</body>
+
+</html>
