@@ -23,10 +23,9 @@ function changeQuestion() {
 
 function showResponse() {
     let input = inputBox.value;
-    if (inputBox.value == "") { }
+    if (inputBox.value == "") return 
     // change question with setTimeout
-    else {
-        if (num == 0) {
+    else if (num == 0) {
             output.innerHTML = `Hola ${input}, encantado de conocerte.`
             inputBox.value = "";
             inputBox.setAttribute("placeholder", "Espere...");
@@ -51,11 +50,10 @@ function showResponse() {
             ++num;
             setTimeout(changeQuestion, 2500);
         }
-    }
 }
 
 // Listen enter for user 
-inputBox.addEventListener("keypress", function (e) {
+inputBox.addEventListener("keypress", function (e) {    
     if (e.which == 13) {
         // call function
         showResponse();

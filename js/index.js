@@ -44,14 +44,15 @@ function chat(input) {
 	input = input.toLowerCase();
 
 
-	for (let i = 0; i < responses.length; i++) {
+	for (const response of responses) {
 		// if input have a response, show response
-		if (input.includes(responses[i].input)) {
-			return responses[i].output;
+		if (input.includes(response.input)) {
+			return response.output;
 		}
 	}
 	return 'UPS! Lo siento, no comprendo lo que intentas decir';
 }
+
 
 
 function send() {
