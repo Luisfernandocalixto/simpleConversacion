@@ -23,7 +23,8 @@ function changeQuestion() {
 
 function showResponse() {
     let input = inputBox.value;
-    if (inputBox.value == "") return 
+    
+    if (inputBox.value.trim() == "") return 
     // change question with setTimeout
     else if (num == 0) {
             output.innerHTML = `Hola ${input}, encantado de conocerte.`
