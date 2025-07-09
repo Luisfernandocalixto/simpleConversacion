@@ -1,11 +1,7 @@
 // array questions
-let questions = [
-    "¿Cómo te llamas?",
-    "¿De dónde eres?",
-    "¿Cuál es tu edad?",
-    "¿En qué estas trabajando?",
-    "Fue agradable hablar contigo."
-];
+import { questions } from "../data/questions.js";
+
+document.addEventListener('DOMContentLoaded', function(){
 
 // initial variables
 let num = 0;
@@ -61,3 +57,4 @@ inputBox.addEventListener("keypress", function (e) {
     }
 })
 
+})
