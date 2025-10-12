@@ -1,6 +1,6 @@
 
 // questions and responses
-import { responses } from "../data/response.js"
+import { responses } from "../data/response.js";
 document.addEventListener('DOMContentLoaded', function(){
 
 // container of response
@@ -12,7 +12,7 @@ buttonSend.addEventListener('click', send);
 function checkInput() {
 	// check value input and function 
 	textarea.addEventListener('input', () => {
-		buttonSend.disabled = textarea.value.trim() === ''
+		buttonSend.disabled = textarea.value.trim() === '';
 
 	});
 }
