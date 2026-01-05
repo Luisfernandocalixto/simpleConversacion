@@ -18,28 +18,27 @@
 <body>
     <header class="content">
         <h1>Simple conversación</h1>
-        <img src="/img/icono.webp" alt="Astronauta" class="imgPrincipal">
+        <img src="/img/icono.webp" alt="Astronauta" class="imgPrincipal" width="200px">
     </header>
-    <section class="chat content">
+    <main class="chat content">
         <div id="chatbot"></div>
-        <input type="text" id="userInput" placeholder="Escribe" autocomplete="off" required>
+        <input type="text" id="userInput" placeholder="Escribe ejem: Hola" autocomplete="off" required>
         <button id="buttonSend" disabled >Enviar</button>
-    </section>
+    </main>
     <br>
-    <hr>
-    <section class="content" >
+    <footer class="content" >
         <div class="flex">
             <div>
-                <img src="/img/image.webp" class="imgPrincipal" alt="Astronauta">
+                <img src="/img/image.webp" class="imgPrincipal" width="200px" alt="Astronauta">
             </div>
             <div id="result" >
             </div>
             <div class="input" >
-                <input type="text" id="ans" placeholder="Escribe" required autocomplete="off" />
+                <input type="text" id="ans" placeholder="Escribe tu nombre" required autocomplete="off" />
             </div>
         </div>
 
-    </section>
+    </footer>
     <script  src="/js/index.js" type="module"></script>
     <script   src="/js/app.js" type="module" ></script>
 </body>
